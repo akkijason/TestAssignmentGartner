@@ -1,0 +1,39 @@
+1. select * from users where id in(3,2,4)
+
+2. select users.fist_name, users.last_name,
+ sum(case when listings.status=2 then 1 else 0 end) Basic,
+ sum(case when listings.status=3 then 1 else 0 end) Premium,
+from users inner join listings on
+users.id=listings.user_id
+group by listings.status
+where users.status=2
+
+3. select users.fist_name, users.last_name,
+ sum(case when listings.status=2 then 1 else 0 end) Basic,
+ sum(case when listings.status=3 then 1 else 0 end) Premium,
+from users inner join listings on
+users.id=listings.user_id
+having Count(Premium) >= 1
+group by listings.status
+where users.status=2
+
+4. select users.fist_name, users.last_name, clicks.currency
+ aggregate(clicks.price) Revenue
+from users inner join listings on
+users.id=listings.user_id
+from listings inner join clicks on
+listings.id=clicks.listings_id
+group by clicks.price
+where users.status=2 and click.created.GetYear()=2013
+
+5. INSERT INTO clicks VALUES (3,4.00,'USD','2022-07-17 16:18:43') SELECT LAST_INSERT_ID()
+
+6. select listings.name,
+from listings where id not in(select clicks.listings_id from 
+listings inner join clicks on
+listings.id=clicks.listings_id
+where click.created.GetYear() != 2013)
+
+7. 
+
+8. 
