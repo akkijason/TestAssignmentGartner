@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAssignmentGartner", "TestAssignmentGartner.csproj", "{19190EAB-A980-48B5-8E35-3C113C849DA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19190EAB-A980-48B5-8E35-3C113C849DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19190EAB-A980-48B5-8E35-3C113C849DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19190EAB-A980-48B5-8E35-3C113C849DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19190EAB-A980-48B5-8E35-3C113C849DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCC917EE-C4CB-4D92-9D2E-91B2B6654F88}
+	EndGlobalSection
+EndGlobal
